@@ -1,0 +1,84 @@
+    <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+            <!-- Style.css -->
+            <link rel="stylesheet" href="style.css">
+            <!-- Favicon -->
+            <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+            <title>Frontend Mentor | Rock, Paper, Scissors</title>
+        </head>
+        <body>
+            
+            <!-- RPS -->
+            <div class="rps">
+                <!-- Rps Top -->
+                <div class="rps-top">
+                    <h1 class="rps-logo"><img src="images/logo.svg" alt="logo"></h1>
+                    <div class="rps-score">
+                        <span>Score</span>
+                        <h3>0</h3>
+                    </div>
+                </div>
+                <!-- Rps Top END -->
+
+                <!-- Rps Selection -->
+                <div class="rps-selection">
+                    <!-- Rps Main One -->
+                    <div class="rps-main-one">
+                        <button class="btn btn-paper" data-picked="paper"><img src="images/icon-paper.svg" alt=""></button>
+                        <button class="btn btn-scissors" data-picked="scissors"><img src="images/icon-scissors.svg" alt=""></button>
+                        <button class="btn btn-rock" data-picked="rock"><img src="images/icon-rock.svg" alt=""></button>
+                    </div>
+                    <!-- Rps Main One END -->
+                </div>
+                <!-- Rps Selection END -->
+                
+                <!-- Rps Battle -->
+                <div class="rps-battle hide-el">
+                    <div class="rps-battle-container">
+                        <div class="picked picked-one">
+                            <!-- <button class="btn btn-paper"><img src="images/icon-paper.svg" alt=""></button> -->
+                            <h3>You picked</h3>
+                        </div>
+                        <div class="rps-battle-again">
+                            <h2>You win</h2>
+                            <button class="btn-again">Play again</button>
+                        </div>
+                        <div class="picked picked-two">
+                            <div class="picked-two-wait"></div>
+                            <!-- <button class="btn btn-rock hide-el"><img src="images/icon-rock.svg" alt=""></button> -->
+                            <h3>The house picked</h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- Rps Battle END -->
+                <!-- Rps Rules -->
+                <button class="rps-rules-btn">Rules</button>
+                <!-- Rps Rules END -->
+            </div>
+            <!-- RPS END -->
+
+            <!-- Rules Modal -->
+            <div class="rules-modal hide-modal">
+                <div class="rules-modal-content">
+                    <h3 class="content-title">Rules</h3>
+                    <img src="images/image-rules.svg" alt="">
+                </div>
+                <span class="close-rules-modal">
+                    <img src="images/icon-close.svg" alt="">
+                </span>
+            </div>
+            <!-- Rules Modal END -->
+
+    
+            <!-- <div class="attribution">
+                Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+                Coded by <a href="#">Your Name Here</a>.
+            </div> -->
+
+            <!-- Main.js -->
+            <script src="main.js"></script>
+        </body>
+    </html>
